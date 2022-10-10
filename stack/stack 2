@@ -1,0 +1,1 @@
+Given a Queue data structure that supports standard operations like enqueue() and dequeue(). The task is to implement a Stack data structure using only instances of Queue and Queue operations allowed on the instances.
