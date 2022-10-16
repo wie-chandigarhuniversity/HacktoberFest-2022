@@ -4,16 +4,19 @@
 using namespace std;
 int main()
 {
+
 int n;
-cout<<"Enter the size of the array";
+cout<<"Enter the size of the array: ";
 cin>>n;
-int arr [n]
-for(int i=0, i<n; i++)
+int arr [n];
+cout<<"Enter the "<<n<<" elements in the array: ";
+for(int i=0; i<n; i++)
 {
-cin<<arr[i];
+cin>>arr[i];
 }
 // Printing the elments of the array
-for(int i=0, i<n; i++)
+cout<<"Hence, the elements present in the array are: ";
+for(int i=0; i<n; i++)
 {
 cout<<arr[i]<<" ";
 }
