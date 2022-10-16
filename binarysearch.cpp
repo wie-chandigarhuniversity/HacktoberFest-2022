@@ -34,7 +34,7 @@ int main()
     }
     if(key==input_array[mid]) 
     {
-        cout << "key found at index " << mid << endl;
+        cout << "key found " << mid << endl;
     }
     else 
     {
