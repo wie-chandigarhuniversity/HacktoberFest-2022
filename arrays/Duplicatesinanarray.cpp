@@ -4,14 +4,14 @@ using namespace std;
  
 void printRepeating(int arr[], int n)
 {
-   
+    
     for (int i = 0; i < n; i++)
     {
         int index = arr[i] % n;
         arr[index] += n;
     }
  
-   
+  
     for (int i = 0; i < n; i++)
     {
         if ((arr[i] / n) >= 2)
