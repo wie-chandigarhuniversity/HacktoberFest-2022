@@ -1,4 +1,4 @@
-//Taking input from user to enter the size and elemnts of the array.
+//Taking input from user to enter the size and elements of the array.
 
 #include<iostream>
 using namespace std;
