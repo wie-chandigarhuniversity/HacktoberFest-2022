@@ -1,9 +1,19 @@
+//Taking input from user to enter the size and elemnts of the array.
+
 #include<iostream>
 using namespace std;
 int main()
 {
-int arr [] = {12, 23, 13, 45, 66, 89};
-for(int i=0, i <5; i++)
+int n;
+cout<<"Enter the size of the array";
+cin>>n;
+int arr [n]
+for(int i=0, i<n; i++)
+{
+cin<<arr[i];
+}
+// Printing the elments of the array
+for(int i=0, i<n; i++)
 {
 cout<<arr[i]<<" ";
 }
