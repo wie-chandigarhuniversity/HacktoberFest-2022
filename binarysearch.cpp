@@ -38,7 +38,7 @@ int main()
     }
     else 
     {
-        cout << "key is not found in the array" << endl;
+        cout << "key is not found" << endl;
     }
     return 0;
 }
