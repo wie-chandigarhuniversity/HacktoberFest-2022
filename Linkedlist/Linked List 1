@@ -1,1 +1,8 @@
 //Write a function to delete a Linked List
+// Delete linkedlist from end
+Struct node* temp=head ;
+While(temp->next->next!=NULL)
+{
+  Temp= temp->next ;
+}
+Temp->next= NULL;

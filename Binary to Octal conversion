@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+int main(){
+    
+    // conversion of binary to octal, 101 = 65 
+    
+    int n;
+    cout<<"Enter a binary number: ";
+    cin>>n;
+    int octNO = 0;
+    int x=1;
+    
+    while(n>0){
+        
+        int rem = n%10;
+        octNO += x*rem;
+        x*=8;
+        n = n/10;
+    }
+    cout<<"Successfully converted to Octal number and number is: "<<octNO;
+    
+}

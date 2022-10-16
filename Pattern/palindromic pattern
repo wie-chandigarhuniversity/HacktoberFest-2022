@@ -1,0 +1,38 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int i,j,n;
+    cout<<"Enter the value of n: ";
+    cin>>n;
+    /*  1
+       212
+      32123
+     4321234
+    543212345
+               */
+     
+    for(i=1;i<=n;i++){
+        int k=i;
+        for(j=n;j>i;j--){
+            cout<<" ";
+        }
+        for(j=1;j<=i;j++){
+            cout<<k;
+            k--;
+        
+        }
+        k=2;
+        for(j=1;j<=i-1;j++){
+            cout<<k;
+            k++;
+        }
+        cout<<endl;
+    }
+   
+    
+
+    return 0;
+}
