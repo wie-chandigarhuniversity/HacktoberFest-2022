@@ -1,1 +1,19 @@
 //Html code for radio button!
+
+
+html>  
+<head>  
+</head>  
+<title> Example of Radio Button</title>  
+<body>  
+<form>  
+    
+<label>  
+Gender:   
+</label>  <br>  
+<input type="radio" id="gender" name="gender" value="male"/> Male    
+<br>  
+<input type="radio" id="gender" name="gender" value="female"/> Female <br/>   
+</form>    
+</body>  
+</html>  
