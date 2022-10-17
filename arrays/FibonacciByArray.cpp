@@ -1,9 +1,10 @@
+//Print fibonacci series using array
 #include<bits/stdc++.h>
 using namespace std;
 int main(){
 
 	int a[100], n;
-	cout<<"How many fibonacci number of sequence:  ";
+	cout<<"How many fibonacci number you want to enter:  ";
 	cin>>n;
 	a[0] = 0;
 	a[1] = 1;

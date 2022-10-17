@@ -34,11 +34,11 @@ int main()
     }
     if(key==input_array[mid]) 
     {
-        cout << "key found at index " << mid << endl;
+        cout << "key found " << mid << endl;
     }
     else 
     {
-        cout << "key is not found in the array" << endl;
+        cout << "key is not found" << endl;
     }
     return 0;
 }
