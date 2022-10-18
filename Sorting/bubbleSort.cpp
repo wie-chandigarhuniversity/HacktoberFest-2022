@@ -1,27 +1,38 @@
-#include<bits/stdc++.h>
+// Bubble Sort
+#include<iostream>
 using namespace std;
-int main()
+void bubble_sort(int arr[],int n)
 {
-    int number,i,ar[200],j,temp;
-    cout<<"Enter the size: ";
-    cin>>number;
-    cout<<"Enter the array: ";
-	for(i=0; i<number; i++){
-    	cin>>ar[i];
-    }
-        
-    for(i=0; i<(number-1); i++){
-        for(j=0; j<(number-i-1); j++){
-            if(ar[j]>ar[j+1]){
-                temp = ar[j];
-                ar[j] = ar[j+1];
-                ar[j+1] = temp;
+    int count=1;
+    while(count<n)
+    {
+        for(int i=0;i<n-count;i++)
+        {
+            if(arr[i]>arr[i+1])
+            {
+                int temp=arr[i];
+                arr[i]=arr[i+1];
+                arr[i+1]=temp;
             }
         }
+        count++;
     }
-
-    cout<<"Sorted Order : ";
-    for(i=0; i<number; i++){
-    	cout<<ar[i]<<" ";
+    for (int i=0;i<n;i++)
+    {   
+        cout<<arr[i]<<" ";
     }
+    
+}
+int main()
+{
+    int len;
+    cout<<"enter size of array";
+    cin>>len;
+    int arr[len];
+    cout<<"enter array elements"<<endl;
+    for (int i=0;i<len;i++)
+    {   
+        cin>>arr[i];
+    }
+    bubble_sort(arr,len);
 }
