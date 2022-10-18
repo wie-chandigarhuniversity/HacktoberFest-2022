@@ -1,13 +1,12 @@
-#include<bits/stdc++.h>
-using namespace std;
+#include<stdio.h>
 int main()
 {
     int number,i,ar[200],j,temp;
-    cout<<"Enter the size: ";
-    cin>>number;
-    cout<<"Enter the array: ";
+    printf("Enter the size: ");
+    scanf("%d",&number);
+    printf("Enter the array: ");
 	for(i=0; i<number; i++){
-    	cin>>ar[i];
+    	scanf("%d",&ar[i]);
     }
         
     for(i=0; i<(number-1); i++){
@@ -20,8 +19,9 @@ int main()
         }
     }
 
-    cout<<"Sorted Order : ";
+    printf("Sorted Order : ");
     for(i=0; i<number; i++){
-    	cout<<ar[i]<<" ";
+        printf("%d ",ar[i]);
+    	
     }
 }

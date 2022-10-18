@@ -1,0 +1,26 @@
+bool isPalindrome(Node *head)
+    {
+        if(!head || !head->next) return true;
+        Node*prev=NULL , *cur=head , *forw=head->next , *fast=head;
+        bool f=false;
+        while(fast!=NULL && fast->next != NULL)  // Reverse Half list
+        {
+            cur->next=prev;
+            prev=cur;
+            cur=forw;
+            forw=cur->next;
+            if(f) fast=fast->next->next;
+            else fast=forw;
+            f=true;
+        }
+        if(fast)
+            cur=forw;
+        while(prev!=NULL)
+        {
+            if(prev->data != cur->data) return false;
+            prev=prev->next;
+            cur=cur->next;
+        }
+        return true;
+        
+    }
