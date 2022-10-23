@@ -1,0 +1,18 @@
+/* Program to Copy One String into Another String
+
+There are two way to copy one sting into another string in C++ programming language, first using pre-defined library function strcpy() and other is without using any library function. */
+
+#include<iostream.h>
+#include<conio.h>
+#include<string.h>
+
+void main()
+{
+  char s1[20], s2[20];
+  clrscr();
+  cout<<"Enter string s1: ";
+  cin>>s1;
+  strcpy(s2, s1);
+  cout<<"String s2: "<<s2;
+getch();
+}
