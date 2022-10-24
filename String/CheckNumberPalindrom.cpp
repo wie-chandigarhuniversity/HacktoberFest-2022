@@ -1,32 +1,33 @@
+// Checking pallindrome number by Devansh Gupta(21bcs11007)
+
 #include<iostream>
 #include<stdio.h>
 using namespace std;
 
-int main(){
-	
+int main()
+{
 	int a,temp;
-	cout<<"enter a: ";
+	cout<<"Enter a number: ";
 	cin>>a;
-	
 	int n=a;
-	int res = a%10;
-	
-	while(true){
+	int r = a%10;
+	while(true)
+	{
 		a = a/10;
 		if(a==0){
 			break;
 		}
 		temp = a%10;
-		res = (res*10)+temp;
+		r = (r*10)+temp;
 	}
-	
-	if(res==n){
-		cout<<"Number is palindrom number";
+	if(r==n)
+	{
+		cout<<"Number is a palindrom number.";
 	}
-	else{
-		cout<<res<<endl;
-		cout<<"Number is not a palindrom number";
+	else
+	{
+		cout<<r<<endl;
+		cout<<"Number is not a palindrom number.";
 	}
-
 return 0;
 }
