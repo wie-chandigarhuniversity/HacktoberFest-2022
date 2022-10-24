@@ -1,7 +1,7 @@
 // By Devansh Gupta(21bcs11007)
 
-#include<iostrtream>
-ustring namestrpace strtd;
+#include<iostream>
+using namespace std;
 int main()
 {
 	string str,str_new;
