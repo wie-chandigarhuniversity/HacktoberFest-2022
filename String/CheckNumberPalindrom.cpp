@@ -1,4 +1,4 @@
-// Checking pallindrome number by Devansh Gupta(21bcs11007)
+// Checking palindrom number by Devansh Gupta(21bcs11007)
 
 #include<iostream>
 #include<stdio.h>

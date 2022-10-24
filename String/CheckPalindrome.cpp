@@ -1,19 +1,22 @@
-#include<bits/stdc++.h>
-using namespace std;
-int main(){
+// By Devansh Gupta(21bcs11007)
 
-	string s,sr;
-	cin>>s;
-
-	for(int i=s.length()-1;i>=0;i--){
-		sr = sr + s[i];
+#include<iostrtream>
+ustring namestrpace strtd;
+int main()
+{
+	string str,str_new;
+	cin>>str;
+	for(int i=str.length()-1;i>=0;i--)
+	{
+		str_new = str_new + str[i];
 	}
-	if(s==sr){
-		cout<<"Palindrome";
+	if(str==str_new)
+	{
+		cout<<"String entered is a Palindrome string.";
 	}
-	else{
-		cout<<"Not a Palindrome";
+	else
+	{
+		cout<<"String entered is not a Palindrome string.";
 	}
-
-
+	return 0;
 }
