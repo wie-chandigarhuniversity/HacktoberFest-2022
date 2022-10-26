@@ -1,3 +1,5 @@
+// solution of Coding ninjas 'Duplicate In Array' problem using an optimal approach
+
 #include <iostream>
 using namespace std;
 // solving the question by XOR operator
