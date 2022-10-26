@@ -1,0 +1,40 @@
+//area of circle 
+#include<stdio.h>
+int main()
+#define pie 3.14
+{ float r ,area;
+printf(" value of r is ");
+scanf("%f" ,&r);
+area =pie *r*r;
+printf("area of circle is %f\n",area );
+
+    return 0;
+}
+
+
+//operation 
+#include<stdio.h>
+int main()
+{
+    int a,b,add,diff,mul,mod;
+    float divid;
+printf("enter the values ");
+scanf("%d%d",&a,&b);
+add=a+b;
+diff=a-b;
+divid=(float)a/(float)b;
+mul=a*b;
+mod=a%b;
+printf("sum-%d\n",add);
+printf("Difference-:%d\n",diff);
+printf("dividsion-%f\n",divid);
+printf("product-%d\n",mul);
+printf("modulus-%d\n",mod);
+return 0;
+}
+
+
+
+
+
+
