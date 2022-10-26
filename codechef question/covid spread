@@ -1,0 +1,22 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int t;
+    cin>>t;
+    while(t--)
+    {
+        int n,d,res=1;
+        cin>>n>>d;
+        for(int i=1;i<=d;i++)
+        {
+            if(i<=10)
+               res=res*2;
+             else if(i>10)
+                res=res*3;
+            if(res>=n)
+                res=n;
+        }
+        cout<<res<<endl;
+    }
+}
