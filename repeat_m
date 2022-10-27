@@ -1,0 +1,13 @@
+#include<cs50.h>
+#include<stdio.h>
+int main (void)
+{
+   meow(3);
+}
+void meow(int n)
+i=0;
+    while (i<50)
+   i++;
+{
+    printf("meow\n");
+}
