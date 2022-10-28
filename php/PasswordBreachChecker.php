@@ -23,7 +23,7 @@ If the entered Password Matched in any Leaked Password Database , then it warns 
         <div class="passbox">
             <form method="post" action="#">
                 <b> Enter Password</b>
-                <br><input type="text" name ="password" placeholder="password" title="Enter your password to check" required><br>
+                <br><input type="text" name ="password" placeholder="mypassword" title="Enter your password to check" required><br>
                 <input type="submit" value="Check">
             </form>
         </div>
