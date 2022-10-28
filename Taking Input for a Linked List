@@ -1,0 +1,23 @@
+class Node:
+    def __init__(self,data):
+        self.data = data
+        self.next = None
+        
+def TakingInput():
+    InputList = [int(ele) for ele in input().split()]
+    head = None
+    for Currdata in InputList:
+        if Currdata == -1:
+            break
+        NewNode = Node(Currdata)
+        if head is None:
+            head = NewNode
+        else:
+            Curr = head
+            while Curr.next is not None:
+                Curr = Curr.next
+            Curr.next = NewNode
+    return head
+
+head = TakingInput()
+print(head)
