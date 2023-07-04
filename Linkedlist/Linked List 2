@@ -1,6 +1,18 @@
 //Write a function to count the number of nodes in a given singly linked list
 
 // ---ITERATIVE MEHTOD
+static int length(Node head)
+{
+    int count=0;
+    if(head==null)
+    return 0;
+    while(head.next)
+    {
+        count++;
+
+    }
+    return count;
+}
 
 // We create a count variable of Integer type , 
 // Then We will simply iterate the LinedList and while doing so we will increase the count with each iteration.
@@ -25,3 +37,4 @@ static int length(Node head){
 
         return 1 + length(head.next);
 }
+

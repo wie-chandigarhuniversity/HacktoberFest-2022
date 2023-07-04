@@ -1,11 +1,11 @@
-#include<bits/stdc++.h>
+#include<iostream>
 using namespace std;
 int main(){
 
-	string s = "hello world";
+	string st="Chandigarh University";
 	
-	for(int i=s.length()-1;i>=0;i--){
-		cout<<s[i];
+	for(int i=st.length()-1;i>=0;i--){
+		cout<<st[i]<<" ";
 	}
 
 

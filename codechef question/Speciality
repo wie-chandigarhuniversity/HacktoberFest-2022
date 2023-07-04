@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int t;
+	cin>>t;
+      while(t--){
+          int X,Y,Z;
+          cin>>X>>Y>>Z;
+          if(X>Y && X>Z){
+              cout<<"Setter"<<endl;
+          }
+          else if(Y>X && Y>Z){
+              cout<<"tester"<<endl;
+          }
+           else if(Z>X && Z>Y){
+              cout<<"Editorialist"<<endl;
+          }
+          
+      }
+	return 0;
+}

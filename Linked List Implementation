@@ -1,0 +1,63 @@
+class Node:
+    def __init__(self,data):
+        self.data = data
+        self.next = None
+
+def printingLL(head):
+    while head is not None:
+        print(str(head.data) + "->",end = " ")
+        head = head.next
+    print("None")
+    return
+
+def takeInput():
+    
+    inputList = [int(ele) for ele in input().split()]
+    head = None
+    tail = None
+    
+    for currdata in inputList:
+        if currdata == -1:
+            break
+        newNode = Node(currdata)
+         
+        if head is None:
+            head = newNode
+            tail = newNode
+        else:
+            tail.next = newNode
+            tail = newNode
+    return head
+
+def print_ith(head,i):
+    # i = int(input())
+    count = 0
+    curr = head
+    while (curr):
+        if count == i:
+            return curr.data
+        count +=1
+        curr = curr.next
+        
+def revereseList(head):
+    if head is None or head.next is None:
+        return head
+    
+    curr = head
+    prev = None
+    Next = None
+    while curr is not None:
+        Next = curr.next
+        curr.next = prev
+        prev = curr
+        curr = Next
+    head = prev
+    return head
+
+head = takeInput()
+printingLL(head)
+revereseList(head)
+printingLL(head)
+# revereseList(head)
+# printingLL(head)
+

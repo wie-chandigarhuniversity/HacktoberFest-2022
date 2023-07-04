@@ -1,0 +1,132 @@
+//leap year
+
+
+#include <stdio.h>
+int main() {
+   int year;
+   printf("Enter a year: ");
+   scanf("%d", &year);
+
+   if (year % 400 == 0) {
+   printf("%d is a leap year.", year);
+   }
+   else if (year % 100 == 0) {
+      printf("%d is not a leap year.", year);
+   }
+
+   else if (year % 4 == 0) {
+      printf("%d is a leap year.", year);
+   }
+// menu driven program
+
+#include<cs50.h>
+#include<stdio.h>
+#include<math.h>
+
+int main(void)
+{
+    int num = get_int("Enter any number: ");
+
+    printf("Press 1 to check number is even or odd\n");
+    printf("Press 2 to check number is positive or negative\n");
+    printf("Press 3 to print square of the number\n");
+    printf("Press 4 to print squareroot of the number\n");
+    int choice = get_int("Enter your choice: ");
+
+
+    switch (choice)
+
+    {
+
+    case 1:
+
+    {
+        (num % 2 == 0? printf("num is even"): printf("num is odd"));
+        break;
+    }
+    case 2:
+    {
+        (num > 0 ? printf("num is positive"): ((num == 0 )? printf("num is zero"): printf("num is negative")));
+        break;
+    }
+    case 3:
+    {
+        float square = num * num;
+        printf("Square of the num is: %f\n", square);
+        break;
+    }
+    case 4:
+    {
+        float squaroo = sqrt(num);
+        printf("Squaroot of the num is: %f\n", squaroo);
+        break;
+    }
+    default:
+        printf("wrong choice\n");
+    }
+    return 0;
+}
+
+
+
+
+   else {
+      printf("%d is not a leap year.", year);
+   }
+
+   return 0;
+}
+
+
+//
+
+#include<cs50.h>
+#include<stdio.h>
+#include<math.h>
+
+int main(void)
+{
+    int num = get_int("Enter any number: ");
+
+    printf("Press 1 to check number is even or odd\n");
+    printf("Press 2 to check number is positive or negative\n");
+    printf("Press 3 to print square of the number\n");
+    printf("Press 4 to print squareroot of the number\n");
+    int choice = get_int("Enter your choice: ");
+
+
+    switch (choice)
+
+    {
+
+    case 1:
+
+    {
+        (num % 2 == 0? printf("num is even"): printf("num is odd"));
+        break;
+    }
+    case 2:
+    {
+        (num > 0 ? printf("num is positive"): ((num == 0 )? printf("num is zero"): printf("num is negative")));
+        break;
+    }
+    case 3:
+    {
+        float square = num * num;
+        printf("Square of the num is: %f\n", square);
+        break;
+    }
+    case 4:
+    {
+        float squaroo = sqrt(num);
+        printf("Squaroot of the num is: %f\n", squaroo);
+        break;
+    }
+    default:
+        printf("wrong choice\n");
+    }
+    return 0;
+}
+
+
+

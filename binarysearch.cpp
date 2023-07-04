@@ -1,4 +1,4 @@
-#include<bits/stdc++.h>
+#include<iostream>
 using namespace std;
 int main()
 {
@@ -34,7 +34,7 @@ int main()
     }
     if(key==input_array[mid]) 
     {
-        cout << "key found " << mid << endl;
+        cout << "Key Found" << mid << endl;
     }
     else 
     {
